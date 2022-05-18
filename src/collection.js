@@ -436,8 +436,8 @@ Collection.prototype.processOnMove = function (evt) {
             let delta_y = pos.y - clamped_pos.y;
             nipple.position.x += delta_x;
             nipple.position.y += delta_y;
-            nipple.position.x = u.generalClamp(nipple.position.x, clampPadding, window.innerWidth - (clampPadding * 2))
-            nipple.position.y = u.generalClamp(nipple.position.y, clampPadding, window.innerHeight - (clampPadding * 2))
+            nipple.position.x = u.generalClamp(nipple.position.x, clampPadding, window.innerWidth - (clampPadding * 2));
+            nipple.position.y = u.generalClamp(nipple.position.y, clampPadding, window.innerHeight - (clampPadding * 2));
             nipple.el.style.top = (nipple.position.y - (self.box.top + scroll.y)) + 'px';
             nipple.el.style.left = (nipple.position.x - (self.box.left + scroll.x)) + 'px';
 
