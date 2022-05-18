@@ -189,3 +189,12 @@ export const clamp = (pos, nipplePos, size) => ({
     //                          top-clamping         bottom-clamping
     y: Math.min(Math.max(pos.y, nipplePos.y - size), nipplePos.y + size)
 });
+
+export const generalClamp = (val, min, max) => {
+    if (val > max) {
+        return max;
+      } if (val < min) {
+        return min;
+      }
+      return val;
+}
