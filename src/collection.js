@@ -436,8 +436,8 @@ Collection.prototype.processOnMove = function (evt) {
             let delta_y = pos.y - clamped_pos.y;
             nipple.position.x += delta_x;
             nipple.position.y += delta_y;
-            // nipple.el.style.top = u.generalClamp(nipple.position.y - (self.box.top + scroll.y), clampPadding, window.innerHeight - (clampPadding * 2)) + 'px';
-            // nipple.el.style.left = u.generalClamp(nipple.position.x - (self.box.left + scroll.x), clampPadding, window.innerHeight - (clampPadding * 2)) + 'px';
+            nipple.el.style.top = u.generalClamp(nipple.position.y - (self.box.top + scroll.y), clampPadding, window.innerHeight - (clampPadding * 2)) + 'px';
+            nipple.el.style.left = u.generalClamp(nipple.position.x - (self.box.left + scroll.x), clampPadding, window.innerHeight - (clampPadding * 2)) + 'px';
 
             dist = u.distance(pos, nipple.position);
         }
