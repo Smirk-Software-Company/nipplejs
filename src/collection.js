@@ -431,7 +431,7 @@ Collection.prototype.processOnMove = function (evt) {
     if (opts.follow) {
         // follow behaviour
         if (dist > size) {
-            // const clampPadding = 300 + size;
+            const clampPadding = 300 + size;
             let delta_x = pos.x - clamped_pos.x;
             let delta_y = pos.y - clamped_pos.y;
             nipple.position.x += delta_x;
